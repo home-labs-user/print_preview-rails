@@ -52,3 +52,5 @@ HTMLElement.prototype.printPreview = ->
     printAnchors = preview.document.querySelectorAll("a")
     printAnchors.each (printAnchor, i) ->
       printAnchor.href = "#"
+
+#
