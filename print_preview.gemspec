@@ -13,10 +13,10 @@ Gem::Specification.new do |s|
   s.summary     = "TODO: Summary of PrintPreviewRails."
   s.description = "TODO: Description of PrintPreviewRails."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files         = `git ls-files -z`.split("\x0")
+  s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.require_paths = ["lib"]
 
-  s.add_dependency "rails", "~> 3.2.19"
-  # s.add_dependency "jquery-rails"
+  s.add_runtime_dependency 'sass-rails', '~> 3.0', '>= 3.0.0'
 
-  s.add_development_dependency "sqlite3"
 end
