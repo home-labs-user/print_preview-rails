@@ -1,5 +1,5 @@
-module PrintPreviewRails
+module PrintPreview
   class Engine < ::Rails::Engine
-    isolate_namespace PrintPreviewRails
+    isolate_namespace PrintPreview
   end
 end
