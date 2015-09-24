@@ -1,4 +1,4 @@
-require "print_preview/engine"
+require "print_preview/rails"
 
 module PrintPreview
 end
