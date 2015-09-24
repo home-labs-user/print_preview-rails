@@ -1,4 +1,4 @@
-#= require do/browser
+# depends of Browser object of lib do_rails
 
 HTMLElement.prototype.printPreview = ->
 
@@ -52,5 +52,3 @@ HTMLElement.prototype.printPreview = ->
     printAnchors = preview.document.querySelectorAll("a")
     printAnchors.each (printAnchor, i) ->
       printAnchor.href = "#"
-
-#
